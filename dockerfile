@@ -20,7 +20,7 @@ RUN mvn clean package
 VOLUME /tmp
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8080
+EXPOSE 9292
 
 # The application's jar file
 ARG JAR_FILE=/home/app/target/sample-websocket-demo-0.0.1.jar
