@@ -1,9 +1,6 @@
 # Start with a base image containing Maven 
 FROM maven:3.6.3-jdk-8
 
-# Add Maintainer Info
-MAINTAINER Somansh Kumar <somansh@akeo.no>
-
 # Creating Code repo
 RUN mkdir /home/app
 
@@ -19,7 +16,7 @@ RUN mvn clean package
 # Add a volume 
 VOLUME /tmp
 
-# Make port 8080 available to the world outside this container
+# Make port 9292 available to the world outside this container
 EXPOSE 9292
 
 # The application's jar file
